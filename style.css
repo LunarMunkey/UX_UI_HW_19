@@ -72,6 +72,14 @@ nav {
     color: #30C5CB;
 }
 
+.active {
+    color: #30C5CB;
+}
+
+.navItem.active {
+    color: #30C5CB;
+}
+
 .hero {
     height: 650px;
     padding-top: 130px;
@@ -351,6 +359,7 @@ footer {
     justify-content: center;
     align-content: center;
     height: 150px;
+    padding: 0 15%;
 }
 
 h5 {
