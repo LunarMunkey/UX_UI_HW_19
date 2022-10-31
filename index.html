@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://kit.fontawesome.com/644d5df2b2.js" crossorigin="anonymous"></script>
     <title>Anna Biernacki's Portfolio</title>
 </head>
@@ -24,9 +24,9 @@
                     <i class="fa-solid fa-xmark"></i> 
                 </button>
                 <ul class="navUL showMenu" id="navUL">
-                    <li class="navItem homeNavItem" id="home">Home</li>
-                    <li class="navItem projectsNavItem" id="projects">Projects</li>
-                    <li class="navItem aboutNavItem" id="about">About</li>
+                    <li class="navItem homeNavItem" id="home"><a href="#hero" class="homeNavItem navItem">Home</a></li>
+                    <li class="navItem projectsNavItem" id="projects"><a href="#work" class="projectsNavItem navItem">Projects</a></li>
+                    <li class="navItem aboutNavItem" id="about"><a href="#aboutMe" class="aboutNavItem navItem">About</a></li>
                     <li class="navItem">Resume</li>
                 </ul>
             </nav>
@@ -67,7 +67,7 @@
                     <img src="./Images/mars-mobile.png" alt="mars-mobile" id="mars-mobile">
                 </div>
             </div>
-            <div class="caseStudy">
+            <div class="caseStudy" id="caseStudy3">
                 <div class="caseImage" id="travemoteImage">
                     <img src="./Images/travemote.png" alt="travemote-mobile">
                 </div>
@@ -80,8 +80,8 @@
         </div>
     </section>
     <section class="aboutMe" id="aboutMe">
-        <h2 class="sectionHeader">ABOUT</h2>
-        <div class="about">
+        <h2 class="sectionHeader" id="aboutHeader">ABOUT</h2>
+        <div class="about" id="aboutDiv">
             <div class="aboutTop">
                 <p>Previously a Certified Veterinary Technician, communication and empathy with clients and patients were key. Teamwork was priority for the clinic to run smoothly every day regardless of what came through the door. <br> <br> Taking that passion to help animals without a voice to a design career will make sure that user needs are always spoken for and made into an enjoyable experience while keeping client expectations satisfied.</p>
             </div>
@@ -129,7 +129,7 @@
         </div>
         <p id="copyright">Copyright 2022</p>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>

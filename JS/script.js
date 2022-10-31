@@ -1,3 +1,4 @@
+//Hamburger Menu start
 const hamburger = document.querySelector(".hamburger");
 const navUL = document.querySelector(".navUL");
 const navItem = document.querySelectorAll(".navItem");
@@ -17,7 +18,11 @@ function toggleMenu () {
 }
 
 hamburger.addEventListener("click", toggleMenu);
+//Hamburger Menu end
 
+
+
+//Navigation color change with scroll start
 function selectElementByClass(className) {
     return document.querySelector(`.${className}`);
   }
@@ -62,23 +67,18 @@ const OBSERVER_OPTIONS = {
   const observer = new IntersectionObserver(observerCallback, OBSERVER_OPTIONS);
   
   SECTIONS.forEach((sec) => observer.observe(sec));
+//Navigation color change with scroll end
 
+//Navigation click & scroll to start
 
-//const home = document.querySelector(".hero");
-//const projects = document.querySelector(".projects");
-//const about = document.querySelector(".about");
+$('a[href^="#"]').on('click', function (e) {
+  e.preventDefault();
 
+  var targetEle = this.hash;
+  var $targetEle = $(targetEle);
 
-//home.addEventListener("click").scrollIntoView({behavior: 'smooth'});
-//projects.scrollIntoView({behavior: 'smooth'});
-
-//const hamburger = document.getElementById('hamburger');
-//const navUL = document.getElementById('navUL');
-
-//hamburger.addEventListener('click', () => {
-//    navUL.classList.toggle('show');
-//});
-
-//$("hamburger").on('click', function(){
-//    $("navUL").toggle('show');
-//});
+  $('html, body').stop().animate({
+      'scrollTop': $targetEle.offset().top
+  }, 800, 'swing'
+);
+});
